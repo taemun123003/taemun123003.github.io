@@ -5,6 +5,7 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .row{
@@ -20,9 +21,10 @@
     width: 20%;
 }
 .avatar img{
-    width: 90%;
+    width: 80%;
     border-radius: 50%;
     object-fit: cover;
+    object-position: 50% 0.01px;
 }
 
 
@@ -42,5 +44,60 @@
 
 img{
     width: 100%;
-    height:
+}
+
+.secondary{
+    color: #AAA;
+}
+
+.title{
+    font-size: 24px;
+}
+
+.education-item{
+    display: flex;
+    align-items: center;
+    width: 1/3;
+}
+.education-item .logo{
+    width: 20%;
+}
+.education-item .logo img{
+    width: 100%;
+}
+.education-item>ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+.education-item>ul :nth-child(1){
+    color: #AAA;
+}
+.education-item>ul :nth-child(2){
+    font-weight: 700;
+    font-size: 20px;
+}
+.education-item>ul :nth-child(3){
+    color: #186A3B;
+}
+
+.other-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+.others-block h3{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #AAA;
+}
+.skill{
+    padding-right: 5px;
+}
+.language{
+    padding-left: 5px;
+}
+.other-block div{
+    width: 50%;
+}
+.others-block>* {
+    box-sizing: border-box;
 }
